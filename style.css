@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    font-family: 'SF Pro Display', sans-serif;
+    background-color: #f0f4f8;
+    color: #1c1c1e;
+}
+
+/* Header com imagem */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+}
+
+header h1 {
+    margin: 10px 0 0 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.header-img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Categorias estilo aba */
+.categorias {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.categoria-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #e0e0ff;
+    color: #1c1c1e;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.categoria-btn:hover {
+    background-color: #c1c1ff;
+}
+
+.categoria-btn.active {
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Tabela MDF */
+table {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+}
+
+tr:not(:first-child) {
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Botões de ação */
+button.action-btn {
+    padding: 6px 10px;
+    margin: 0 3px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+button.add-btn { background-color: #34c759; color: white; }
+button.add-btn:hover { background-color: #28a745; }
+
+button.remove-btn { background-color: #ffcc00; color: white; }
+button.remove-btn:hover { background-color: #e0a800; }
+
+button.delete-btn { background-color: #ff3b30; color: white; }
+button.delete-btn:hover { background-color: #c82333; }
+
+/* Botão adicionar item */
+#add-mdf-item {
+    display: block;
+    margin: 0 auto 30px auto;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    background-color: #007aff;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#add-mdf-item:hover {
+    background-color: #005bb5;
+}
+
+.filtro {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #1c1c1e;
+}
+
+#espessura-filter {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.filtro-container {
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Filtro */
+.filtro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #1c1c1e;
+}
+
+#espessura-filter {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Botão adicionar estilizado */
+#add-item {
+    padding: 10px 20px;
+    background-color: #34c759; /* verde iOS */
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+#add-item:hover {
+    background-color: #28a745;
+    transform: translateY(-2px);
+}
+
+.filtro-container {
+    display: flex;                   /* organiza elementos na mesma linha */
+    justify-content: flex-end;       /* empurra tudo para o canto direito */
+    align-items: center;             /* centraliza verticalmente */
+    gap: 10px;                       /* espaço entre input, select e botão */
+    width: 90%;
+    margin: 20px auto;
+}
+
+.add-form {
+    display: flex;
+    gap: 10px;                       /* espaço interno entre os elementos */
+}
+/* Estilo do filtro */
+.filtro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #1c1c1e;
+    font-size: 16px;
+}
+
+#espessura-filter {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Formulário de adição */
+.add-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#item-nome {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 180px;
+    transition: all 0.2s;
+}
+
+#item-nome:focus {
+    outline: none;
+    border-color: #007aff;
+    box-shadow: 0 0 5px rgba(0,122,255,0.5);
+}
+
+#item-tipo {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#item-tipo:focus {
+    outline: none;
+    border-color: #007aff;
+    box-shadow: 0 0 5px rgba(0,122,255,0.5);
+}
+
+/* Botão adicionar estilizado */
+#add-item {
+    padding: 10px 18px;
+    background-color: #34c759; /* verde iOS */
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+#add-item:hover {
+    background-color: #28a745;
+    transform: translateY(-2px);
+}
+
+/* Tabela para manter estilo iPhone */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+}
+
+tr:not(:first-child) {
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Botões de ação da tabela */
+button.action-btn {
+    padding: 6px 10px;
+    margin: 0 3px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+button.add-btn { background-color: #34c759; color: white; }
+button.add-btn:hover { background-color: #28a745; }
+
+button.remove-btn { background-color: #ffcc00; color: white; }
+button.remove-btn:hover { background-color: #e0a800; }
+
+button.delete-btn { background-color: #ff3b30; color: white; }
+button.delete-btn:hover { background-color: #c82333; }
+

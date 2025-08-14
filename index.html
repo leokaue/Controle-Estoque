@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/2910/2910763.png" alt="Estoque" class="header-img">
+        <h1>Controle de Estoque</h1>
+    </header>
+
+   <nav class="categorias">
+    <button class="categoria-btn" data-categoria="mdf">MDF</button>
+    <button class="categoria-btn" data-categoria="fitas">Fitas de Borda</button>
+    <button class="categoria-btn" data-categoria="ferragem">Ferragem</button>
+</nav>
+
+<main>
+    <div class="filtro-container">
+        <!-- Filtro -->
+        <div class="filtro">
+            <label for="espessura-filter">Filtrar:</label>
+            <select id="espessura-filter"></select>
+        </div>
+
+        <!-- Formulário de adição -->
+        <div class="add-form">
+            <input type="text" id="item-nome" placeholder="Nome do item">
+            <select id="item-tipo"></select>
+            <button id="add-item">+ Adicionar</button>
+        </div>
+    </div>
+
+    <table id="item-table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Espessura / Tipo</th>
+                <th>Quantidade</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</main>
+
+
+    
+
+
+  
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
